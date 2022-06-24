@@ -1,3 +1,4 @@
+public class Skill
 /// <summary>
 /// Skill.cs
 /// Tiago Cundari
@@ -12,12 +13,14 @@ public class Skill : ModifiedStat {
 	/// Initializes a new instance of the <see cref="Skill"/> class.
 	/// </summary>
 	public Skill()
-	{
+{
+	private bool _know;           
+
 		_know = false;
 		ExpToLevel = 25;
 		LevelModifier = 1.1f;
 	}
-	
+
 	/// <summary>
 	/// Gets or sets a value indicating whether this <see cref="Skill"/> is know.
 	/// </summary>
