@@ -1,4 +1,4 @@
-public class Skill
+<<<<<<< HEAD
 /// <summary>
 /// Skill.cs
 /// Tiago Cundari
@@ -13,14 +13,12 @@ public class Skill : ModifiedStat {
 	/// Initializes a new instance of the <see cref="Skill"/> class.
 	/// </summary>
 	public Skill()
-{
-	private bool _know;           
-
+	{
 		_know = false;
 		ExpToLevel = 25;
 		LevelModifier = 1.1f;
 	}
-
+	
 	/// <summary>
 	/// Gets or sets a value indicating whether this <see cref="Skill"/> is know.
 	/// </summary>
@@ -46,3 +44,26 @@ public enum SkillName
 	Magic_Offense,
 	Magic_Defense
 }
+
+public class Skill
+{
+	private bool _know;           
+
+
+	public bool Know
+	{
+		get { return _know; }
+		set { _know = value; }
+	}
+}
+
+public enum SkillName
+{
+	Melee_Offense,
+	Melee_Defense,
+	Range_Offense,
+	Range_Defense,
+	Magic_Offense,
+	Magic_Defense
+}
+
